@@ -19,7 +19,7 @@
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/chokeberry20/ToDoApp.git
 
 2. Open the index.html file in your web browser.
 
