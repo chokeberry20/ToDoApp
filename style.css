@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #58edcb 0%, #2d5abc 100%);
+    padding: 15px;
+}
+
+.todo-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    margin: 120px auto 20px;
+    padding: 40px 40px 60px;
+    border-radius: 10px;
+}
+
+.todo-list h2 {
+    color: #385e71;
+    display: flex;
+    align-items: center;
+}
+
+.todo-list h2 i {
+    padding-left: 5px;
+}
+
+.input-field {
+    width: 90%;
+    margin: 30px auto 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5f1f3;
+    border-radius: 30px;
+}
+
+.input-field button {
+    border: none;
+    outline: none;
+    padding: 20px 50px;
+    background: #1392dc;
+    font-size: 15px;
+    color: #e5f1f3;
+    font-weight: 600;
+    border-radius: 30px;
+    user-select: none;
+}
+
+.input-field button:hover{
+    background: #555;
+}
+
+.input-field button:active{
+    background: #352c2c;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.task-list li {
+    list-style: none;
+    font-size: 18px;
+    padding: 20px 70px 50px 60px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+}
+
+.task-list li::before {
+    content: '';
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: url("images/circle-regular.svg") no-repeat;
+    vertical-align: middle;    
+    margin-bottom: 3px;
+}
+
+.task-list li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+.task-list li.checked::before{
+    content: '';
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: url("images/circle-check-regular.svg") no-repeat;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.task-list li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.task-list li span:hover{
+    background: #d26161;    
+    border-radius: 10px;
+}
